@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  business_name: MyString
+  media: MyText
+  location: MyString
+  category: MyString
+  url: MyString
+  public: MyBoolean
+
+two:
+  title: MyString
+  body: MyText
+  business_name: MyString
+  media: MyText
+  location: MyString
+  category: MyString
+  url: MyString
+  public: MyBoolean
