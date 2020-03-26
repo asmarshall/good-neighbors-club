@@ -1,3 +1,56 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.top-banner {
+  height: 700px;
+}
+
+.bg-dark-green {
+  background: #1D4B40;
+}
+
+.banner-text {
+  padding-top: 250px;
+  padding-left: 140px;
+  padding-right: 115px;
+  text-align: left;
+  max-width: 650px;
+  min-width: 650px;
+
+  .title {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 64px;
+    letter-spacing: 1px;
+    color: #F5CCA7;
+    padding-bottom: 20px;
+  }
+
+  .blurb {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #F5CCA7;
+  }
+}
+
+.ways-to-help {
+  padding-top: 80px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  h3 {
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+  }
+}
+
+.category-card-title {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}

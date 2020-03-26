@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GoodNeighborsClub</title>
+    <title>good neighbors club</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,17 +10,16 @@
   </head>
 
   <body>
-    <div class="navbar navbar-light bg-light">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <strong>good neighbors club</strong>
-        </a>
-        <button class='btn navbar-btn btn-link align-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
-          <svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-          </svg>
-        </button>
-      </div>
+    <div class="navbar fixed-top bg-cream">
+      <div class="navbar-collapse collapse"></div>
+      <a href="#" class="navbar-brand mx-auto">
+        good neighbors club
+      </a>
+      <button class='btn navbar-btn btn-link align-right hamburger' data-target='#modalNavigation' data-toggle='modal' type='button'>
+        <svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
+        </svg>
+      </button>
     </div>
 
     <div class="modal fade bd-example-modal-lg" id='modalNavigation' tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
