@@ -1,80 +1,88 @@
-
-<section class="top-banner">
-  <div class="d-md-flex flex-md-equal w-100 h-100">
-    <div class="bg-dark-green text-center text-white overflow-hidden w-50">
+<section class="banner">
+  <div class="row no-gutters">
+    <div class="col text-center bg-dark-green">
       <div class="banner-text">
         <h2 class="title">San Francisco is hurting.</h2>
         <p class="blurb">We love our city. And we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
       </div>
     </div>
-    <div class="bg-light px-md-5 text-center overflow-hidden w-50">
-      <div class="my-3 p-3">
-        <p>(photo)</p>
+    <div class="col text-center bg-dark-green">
+       <%= image_tag("hero.png", alt: "hero banner", class: "img-fluid") %>
+    </div>
+  </div>
+</section>
+
+<section class="category-list">
+  <div class="py-5 bg-cream">
+    <div class="container ways-to-help">
+      <h3 class="">Explore ways to help</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("restaurant.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Restaurants</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("bars_breweries.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Bars & Breweries</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("coffee_tea.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Coffee & Tea</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("boutiques.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Boutiques</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("farms_flowers.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Farms & Flowers</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= image_tag("fitness.png", alt: "hero banner", class: "img-fluid") %>
+          </div>
+          <p class="category-card-title">Fitness</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="album py-5 bg-cream">
-  <div class="container ways-to-help">
-    <h3 class="">Explore ways to help</h3>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+<section class="banner">
+  <div class="row no-gutters">
+    <div class="col text-center bg-light-peach">
+      <div class="banner-text general-resources">
+        <h1>General<br> ways to help</h1>
+        <p>We love our city, and we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
+        <div class="arrow-right">
+          <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"/>
+          </svg>
         </div>
-        <p class="category-card-title">poo</p>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    </div>
+    <div class="col text-center bg-dark-peach">
+      <div class="banner-text general-resources">
+        <h1>Resources<br> & mental health</h1>
+        <p>We love our city. And we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
+        <div class="arrow-right">
+          <svg class="bi bi-arrow-right" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"/>
+          </svg>
         </div>
-        <p class="category-card-title">poo</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-3 shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-        <p class="category-card-title">poo</p>
       </div>
     </div>
   </div>
-</div>
+</section>

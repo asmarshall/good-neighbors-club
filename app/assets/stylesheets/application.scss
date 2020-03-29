@@ -1,10 +1,19 @@
  @import "bootstrap";
  @import "home";
- @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap');
  body {
    font-family: 'Poppins', sans-serif;
    color: #1D4B40;
    font-style: normal;
+ }
+
+ p {
+   font-size: 14px;
+   margin: 0;
+ }
+
+ h2 {
+   font-weight: 400;
  }
 
  .navbar {
@@ -32,7 +41,21 @@
    }
 
    > svg {
-     width: 30px;
+     width: 32px;
      height: auto;
+   }
+ }
+
+ .page-footer {
+   letter-spacing: 0.5px;
+
+   strong {
+     font-size: 12px;
+     font-weight: 500;
+   }
+
+   p {
+     font-size: 11px;
+     font-weight: 200;
    }
  }
