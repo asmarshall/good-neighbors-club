@@ -1,0 +1,98 @@
+<section class="banner">
+  <div class="row no-gutters">
+    <div class="col text-center bg-dark-green">
+      <div class="banner-text">
+        <h2 class="title">San Francisco is hurting.</h2>
+        <p class="blurb">We love our city. And we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
+      </div>
+    </div>
+    <div class="col text-center bg-dark-green">
+       <%= image_tag("hero.png", class: "img-fluid") %>
+    </div>
+  </div>
+</section>
+
+<section class="category-list">
+  <div class="py-5 bg-cream">
+    <div class="container ways-to-help">
+      <h2>Explore ways to help</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to restaurants_path do %>
+              <%= image_tag("restaurant.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Restaurants</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to bars_and_breweries_path do %>
+              <%= image_tag("bars_breweries.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Bars & Breweries</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to coffee_and_tea_path do %>
+              <%= image_tag("coffee_tea.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Coffee & Tea</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to boutiques_path do %>
+              <%= image_tag("boutiques.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Boutiques</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to farms_and_flowers_path do %>
+              <%= image_tag("farms_flowers.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Farms & Flowers</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <%= link_to fitness_path do %>
+              <%= image_tag("fitness.png", class: "img-fluid") %>
+            <% end %>
+          </div>
+          <p class="category-card-title">Fitness</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banner">
+  <div class="row no-gutters">
+      <div class="col text-center bg-light-peach">
+        <%= link_to general_ways_to_help_path do %>
+          <div class="banner-text general-resources">
+            <h1>General<br> ways to help</h1>
+            <p>We love our city, and we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
+            <div class="arrow-right">
+                <%= image_tag("arrow_right.png", class: "img-fluid") %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <div class="col text-center bg-dark-peach">
+      <%= link_to resources_and_mental_health_path do %>
+        <div class="banner-text general-resources">
+          <h1>Resources<br> & mental health</h1>
+          <p>We love our city. And we want to do our part to help the hospitality industry thrive during these wild times. Our beloved restaurants, bars, and small businesses are having to close their doors, and they need our help.</p>
+          <div class="arrow-right">
+            <%= image_tag("arrow_right.png", class: "img-fluid") %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<section class="banner category-banner">
+  <div class="row no-gutters">
+    <div class="col text-left bg-light-peach">
+      <div class="banner-text">
+        <h3>XXX</h3>
+        <h1>Resources & Mental Health</h1>
+        <p>Dining in at restaurants is something we don’t take for granted. Restaurants all over the city, from hole-in-the-wall taco joints to nine-course dining experiences, have fed and served us for years—and now it’s time we serve them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category-list">
+  <div class="py-5 bg-cream">
+    <div class="container ways-to-help">
+      <div class="row">
+        <% @resources_mental_health.each do |resources| %>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <%= image_tag(resources.media, class: "img-fluid") %>
+            </div>
+            <p class="business-name"><%= resources.title %></p>
+            <p class="body"><%= resources.body %></p>
+            <a href="http://<%= resources.url %>" target="_blank"><span class="cta">Be a good neighbor</span> <%= image_tag("arrow_right_small.png", class: "url-arrow") %></a>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>

@@ -1,5 +1,5 @@
  @import "bootstrap";
- @import "home";
+ @import "pages";
  @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap');
  body {
    font-family: 'Poppins', sans-serif;
@@ -16,6 +16,14 @@
    font-weight: 400;
  }
 
+ a {
+   color: #1D4B40;
+
+   &:hover {
+     color: #1D4B40;
+   }
+ }
+
  .navbar {
    padding: 1rem 1.5rem;
  }
@@ -25,6 +33,10 @@
    font-size: 16px;
    color: #1D4B40;
    letter-spacing: 1px;
+
+   &:hover {
+    color: #1D4B40;
+   }
  }
 
  .bg-cream {
@@ -62,6 +74,11 @@
    @media only screen and (max-width: 800px) {
      left: 0;
    }
+ }
+
+ .modal-backdrop.show {
+   background: #1D4B40;
+   opacity: 0.85;
  }
 
  .modal-fullscreen-menu {
