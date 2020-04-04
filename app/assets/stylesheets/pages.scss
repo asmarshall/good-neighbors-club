@@ -1,14 +1,16 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-hr {
-  width: 80%;
-}
 
 h3 {
   font-size: 12px;
   font-weight: 200;
   letter-spacing: 5px;
+}
+
+.evergreen {
+  color: #1D4B40;
+  opacity: 0.6;
 }
 
 .row {
@@ -229,4 +231,98 @@ h3 {
 .arrow-right {
   padding-top: 20px;
   width: 50px;
+}
+
+
+// contact and submit
+.form-page {
+  .centered-content {
+    width: 50%;
+    margin: auto;
+  }
+
+  .contact-cta {
+    margin: auto;
+    width: 90%;
+    padding-top: 90px;
+
+    h1 {
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 41px;
+    }
+
+    p {
+      padding-top: 20px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  form {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .form-control {
+    border: 1px solid rgba(29, 75, 64, 0.4);
+    background-color: #FFFFFA;
+    font-size: 12px;
+    color: #1D4B40;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: 0 0 0 0.01rem rgba(29, 75, 64, 1);
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='%23444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .submit-btn {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 10px;
+    color: #FFFFFA;
+    text-align: center;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #1D4B40;
+    border: 1px solid transparent;
+    padding: 0.6rem 3rem;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .centered-content {
+      width: 90%;
+    }
+
+    .contact-cta {
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    .submit-btn {
+      padding: 0.8rem 5rem;
+      font-size: 14px;
+    }
+  }
 }

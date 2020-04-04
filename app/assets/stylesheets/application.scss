@@ -5,6 +5,7 @@
    font-family: 'Poppins', sans-serif;
    color: #1D4B40;
    font-style: normal;
+   background: #FFFFFA;
  }
 
  p {
@@ -24,8 +25,15 @@
    }
  }
 
+ hr {
+   width: 80%;
+   margin-bottom: 0;
+   color: rgba(29, 75, 64, 0.1);
+ }
+
  .navbar {
    padding: 1rem 1.5rem;
+   border-bottom: 1px solid rgba(29, 75, 64, 0.1);
  }
 
  .navbar-brand {

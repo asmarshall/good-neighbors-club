@@ -1,0 +1,60 @@
+<div class="form-page">
+  <div class="centered-content text-center">
+    <div class="contact-cta">
+      <h1>Help us,<br>help our city.</h1>
+      <p>There are endless things that our small businesses and hospitality
+         industry are doing to adjust in these wild times—and not even a
+         fraction of them are listed here. If you’ve heard of an inspiring
+         way to help the SF community that you feel should be displayed on
+         our site, please fill out the form below to submit to our team for
+         review.</p>
+    </div>
+    <form method="POST" action="/post/store" enctype="multipart/form-data" class="text-left">
+      <%= token_tag %>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first_name" class="evergreen">First Name*</label>
+          <input type="text" class="form-control" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last_name" class="evergreen">Last Name</label>
+          <input type="text" class="form-control" id="last_name" name="last_name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="evergreen">Email Address*</label>
+        <input type="email" class="form-control" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="category" class="evergreen">Choose a category... *</label>
+        <select class="form-control" name="category">
+          <option selected>Select one...</option>
+          <% Post::CATEGORIES.each do |category| %>
+            <option><%= category %></option>
+          <% end %>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="title" class="evergreen">Name of business or suggested title of post*</label>
+        <input type="text" class="form-control" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="body" class="evergreen">Description of how the community can help*</label>
+        <textarea class="form-control" name="body" rows="5" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="url" class="evergreen">URL</label>
+        <input type="text" class="form-control" name="url">
+      </div>
+      <div class="form-group">
+        <label for="additional_comments" class="evergreen">Additional comments?</label>
+        <textarea class="form-control" name="additional_comments" rows="5"></textarea>
+      </div>
+      <div class="text-center pt-4">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+</div>

@@ -1,0 +1,41 @@
+<div class="form-page">
+  <div class="centered-content text-center">
+    <div class="contact-cta">
+      <h1>Get in touch,<br>from afar.</h1>
+      <p>Have a question or see something that needs updating?
+         Fill out the form below and we’ll get back to you ASAP.
+         If you’ve heard of another way to help the SF community that
+         you feel should be listed, please submit it here.</p>
+    </div>
+    <form method="POST" action="/contact/create" enctype="multipart/form-data" class="text-left">
+      <%= token_tag %>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="first_name" class="evergreen">First Name*</label>
+          <input type="text" class="form-control" name="first_name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="last_name" class="evergreen">Last Name</label>
+          <input type="text" class="form-control" name="last_name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="evergreen">Email Address*</label>
+        <input type="email" class="form-control" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject" class="evergreen">Subject</label>
+        <input type="text" class="form-control" name="subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message" class="evergreen">Message*</label>
+        <textarea class="form-control" name="message" rows="5" required></textarea>
+      </div>
+      <div class="text-center pt-4">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+</div>

@@ -9,4 +9,5 @@ class Post < ApplicationRecord
   scope :fitness, -> { where(category: 'fitness') }
   scope :general_ways_to_help, -> { where(category: 'general_ways_to_help') }
   scope :resources_mental_health, -> { where(category: %w[resources mental_health]) }
+  scope :is_public, -> { where(public: true) }
 end

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>New message from <%= @contact.first_name %>!</p>
+    <p>
+    Message details<br>
+    ----------------------------
+    </p>
+    <p>First name: <%= @contact.first_name %></p>
+    <p>Last name: <%= @contact.last_name %></p>
+    <p>Email: <%= @contact.email %></p>
+    <p>Subject: <%= @contact.subject %></p>
+    <p>
+    Message:<br>
+    </p>
+    <p><%= @contact.message %></p><br>
+  </body>
+</html>

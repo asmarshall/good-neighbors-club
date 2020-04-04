@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>New post request from <%= @post.first_name %>!</p>
+    <p>
+    Post details<br>
+    ----------------------------
+    </p>
+    <p>First name: <%= @post.first_name %></p>
+    <p>Last name: <%= @post.last_name %></p>
+    <p>Email: <%= @post.email %></p>
+    <p>Category: <%= @post.category %></p>
+    <p>URL: <%= @post.url %></p>
+    <p>Title: <%= @post.title %></p>
+    <p>
+    Body:<br>
+    </p>
+    <p><%= @post.body %></p><br>
+    <p>Additional comments: <%= @post.additional_comments %></p>
+  </body>
+</html>

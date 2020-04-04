@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'post/create'
   post 'post/store'
+  post 'contact/create'
 
   get 'restaurants', to: 'pages#restaurants'
   get 'bars-and-breweries', to: 'pages#bars_breweries'
@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'fitness', to: 'pages#fitness'
   get 'general-ways-to-help', to: 'pages#general_ways_to_help'
   get 'resources-and-mental-health', to: 'pages#resources_mental_health'
+
+  get 'contact', to: 'pages#contact'
+  get 'submit', to: 'pages#submit'
 
   root 'pages#index'
 end
