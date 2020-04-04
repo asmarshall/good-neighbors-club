@@ -15,6 +15,8 @@ h3 {
 
 .row {
   height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
@@ -38,6 +40,78 @@ h3 {
     height: 100vh;
   }
 }
+
+.about-img {
+  max-width: 200px;
+  height: auto;
+  margin-top: 70px;
+
+  &.left {
+    margin-left: auto;
+    margin-right: 60px;
+    max-width: 300px;
+    height: auto;
+  }
+
+  &.right {
+    margin-right: auto;
+    margin-left: 60px;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+.about-banner {
+  height: 55vh;
+
+  // .row {
+  //   height: 55vh;
+  //   min-height: 50%;
+  //
+  //   @media only screen and (max-width: 800px) {
+  //     height: 100vh;
+  //   }
+  // }
+
+  .banner-text {
+    text-align: center;
+    color: #F7D4B3;
+
+    h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+      line-height: 50px;
+      font-weight: 300;
+      padding-bottom: 10px;
+      padding-top: 5px;
+    }
+
+    p {
+      margin: auto;
+      max-width: 410px;
+      font-weight: 200;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      left: 50%;
+      min-width: 350px;
+
+      h1 {
+        font-size: 45px;
+        line-height: 50px;
+      }
+
+      p {
+        line-height: 20px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
 
 .category-banner {
   height: 55vh;

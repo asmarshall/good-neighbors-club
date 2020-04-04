@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'general-ways-to-help', to: 'pages#general_ways_to_help'
   get 'resources-and-mental-health', to: 'pages#resources_mental_health'
 
+  get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'submit', to: 'pages#submit'
 
