@@ -374,6 +374,16 @@ h3 {
       font-size: 12px;
       line-height: 20px;
     }
+
+    a {
+      color: #1D4B40;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
+
+    a:hover {
+      color: #1D4B40;
+    }
   }
 
   form {

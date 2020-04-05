@@ -30,8 +30,8 @@
         <label for="category" class="evergreen">Choose a category... *</label>
         <select class="form-control" name="category">
           <option selected>Select one...</option>
-          <% Post::CATEGORIES.each do |category| %>
-            <option><%= category %></option>
+          <% Post::VIEWABLE_CATEGORIES.each do |category| %>
+            <option value='<%= category[1] %>'><%= category[0] %></option>
           <% end %>
         </select>
       </div>
