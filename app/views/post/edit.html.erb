@@ -1,7 +1,7 @@
-<section class="text-center">
+<section class="text-center form-page">
 
   <%= form_for(@post, :url => {:action => 'update', :id => @post.id}) do |f| %>
-    <label>Title:</label><br>
+    <label for="title">Title:</label><br>
     <%= f.text_field(:title) %><br>
 
     <label>Body:</label><br>
@@ -11,13 +11,13 @@
     <%= f.text_field(:url) %><br>
 
     <label>Category:</label><br>
-    <%= f.select(:category,Post::CATEGORIES) %><br>
+    <%= f.select(:category,Post::CATEGORIES) %><br><br>
 
-    <label>Public:</label><br>
-    <%= f.check_box(:public) %><br>
+    <label>Public:</label>
+    <%= f.check_box(:public) %><br><br>
 
     <label for="media">Post Media:</label>
-    <%= f.file_field(:media, :class => "form-control media-upload") %><br>
+    <%= f.file_field(:media, :class => "form-control media-upload col-3 m-auto") %><br>
 
     <%= submit_tag "Update Post" %>
   <% end %>
