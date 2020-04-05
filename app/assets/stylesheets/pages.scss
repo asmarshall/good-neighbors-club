@@ -388,7 +388,7 @@ h3 {
 
   form {
     padding-top: 55px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
   }
 
   label {
@@ -418,7 +418,6 @@ h3 {
   .submit-btn {
     display: inline-block;
     font-weight: 300;
-    font-size: 10px;
     color: #FFFFFA;
     text-align: center;
     letter-spacing: 1px;
@@ -447,6 +446,48 @@ h3 {
 
     .submit-btn {
       padding: 0.8rem 5rem;
+      font-size: 14px;
+    }
+  }
+}
+
+.flash-message {
+  width: 50%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.thanks-page {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .thanks-cta {
+    max-width: 410px;
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .thanks-cta {
+      max-width: 90%;
+    }
+
+    p {
       font-size: 14px;
     }
   }

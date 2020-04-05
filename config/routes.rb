@@ -20,7 +20,9 @@ Rails.application.routes.draw do
 
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'contact/thanks', to: 'contact#thanks'
   get 'submit', to: 'pages#submit'
+  get 'submit/thanks', to: 'post#thanks'
 
   root 'pages#index'
 end

@@ -36,6 +36,13 @@
         <button type="submit" class="submit-btn">Submit</button>
       </div>
     </form>
+    <% flash.each do |type, msg| %>
+      <div class="flash-message">
+        <%= msg %>
+      </div>
+    <% end %>
   </div>
-  <hr>
+  <div class="pt-5">
+    <hr>
+  </div>
 </div>

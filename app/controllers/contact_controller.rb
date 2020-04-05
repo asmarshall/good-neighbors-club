@@ -8,9 +8,11 @@ class ContactController < ApplicationController
 
     if @contact.save
       ContactsMailer.general_message(@contact).deliver
-      redirect_to root_path
+
+      redirect_to '/contact/thanks'
     else
-      redirect_to contact_path
+      flash.now[:alert] = "Your message has some errors. Please check the form and resubmit."
+      redirect_to '/contact'
     end
   end
 

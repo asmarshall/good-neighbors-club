@@ -4,7 +4,6 @@ class PostController < ApplicationController
   end
 
   def create
-    # @post = Post.new(post_params)
   end
 
   def store
@@ -20,11 +19,9 @@ class PostController < ApplicationController
     if @post.save
       PostMailer.with(post: @post).new_post_email.deliver_later
 
-      flash[:success] = "Thank you for your post submission! We'll review it and get it posted asap"
-      redirect_to root_path
+      redirect_to '/submit/thanks'
     else
-      flash.now[:error] = "Your post had some errors. Please check the form and resubmit."
-      redirect_to submit_path
+      flash.now[:alert] = "Your submission has some errors. Please check the form and resubmit."
     end
   end
 
@@ -49,6 +46,9 @@ class PostController < ApplicationController
     )
 
     redirect_to '/welcome'
+  end
+
+  def thanks
   end
 
   private
