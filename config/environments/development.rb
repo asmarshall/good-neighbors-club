@@ -39,6 +39,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :test
   host = 'localhost:3000'
   config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
+  config.action_mailer.default_options = { from: 'noreply@goodneighbors.club' }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
