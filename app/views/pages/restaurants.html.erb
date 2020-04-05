@@ -15,9 +15,9 @@
     <div class="container ways-to-help">
       <div class="row">
         <% @restaurants.each do |restaurant| %>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="card mb-3">
-              <%= image_tag("restaurant.png", class: "img-fluid") %>
+              <%= image_tag(restaurant.media, class: "img-fluid") %>
             </div>
             <p class="business-name"><%= restaurant.title %></p>
             <p class="body"><%= restaurant.body %></p>

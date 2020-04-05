@@ -13,7 +13,7 @@ class PostController < ApplicationController
     puts @post
     if params[:media]
       # upload image to cloudinary
-      @image = Cloudinary::Uploader.upload(params[:media]) if params[:media]
+      @image = Cloudinary::Uploader.upload(params[:media])
       @post.media = @image['secure_url']
     end
 
@@ -26,6 +26,29 @@ class PostController < ApplicationController
       flash.now[:error] = "Your post had some errors. Please check the form and resubmit."
       redirect_to submit_path
     end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+
+    if params[:post][:media]
+      @image = Cloudinary::Uploader.upload(params[:post][:media])
+      @post.media = @image['secure_url']
+    end
+
+    @post.update(
+      title: params[:post][:title],
+      body: params[:post][:body],
+      category: params[:post][:category],
+      url: params[:post][:url],
+      public: params[:post][:public]
+    )
+
+    redirect_to '/welcome'
   end
 
   private

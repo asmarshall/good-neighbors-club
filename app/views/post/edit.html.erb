@@ -1,0 +1,25 @@
+<section class="text-center">
+
+  <%= form_for(@post, :url => {:action => 'update', :id => @post.id}) do |f| %>
+    <label>Title:</label><br>
+    <%= f.text_field(:title) %><br>
+
+    <label>Body:</label><br>
+    <%= f.text_area(:body, :size => '40x5') %><br>
+
+    <label>URL:</label><br>
+    <%= f.text_field(:url) %><br>
+
+    <label>Category:</label><br>
+    <%= f.select(:category,Post::CATEGORIES) %><br>
+
+    <label>Public:</label><br>
+    <%= f.check_box(:public) %><br>
+
+    <label for="media">Post Media:</label>
+    <%= f.file_field(:media, :class => "form-control media-upload") %><br>
+
+    <%= submit_tag "Update Post" %>
+  <% end %>
+
+</section>
