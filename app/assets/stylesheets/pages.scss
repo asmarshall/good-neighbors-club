@@ -295,7 +295,7 @@ h3 {
   h2 {
     padding-bottom: 50px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
   }
 }
 
@@ -307,10 +307,10 @@ h3 {
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 24px;
   }
 
   @media only screen and (max-width: 800px) {
@@ -362,6 +362,10 @@ h3 {
 
 // contact and submit
 .form-page {
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
   .centered-content {
     width: 50%;
     margin: auto;
@@ -380,10 +384,7 @@ h3 {
 
     p {
       padding-top: 20px;
-      font-weight: 300;
       letter-spacing: 1px;
-      font-size: 12px;
-      line-height: 20px;
     }
 
     a {
@@ -404,12 +405,14 @@ h3 {
 
   label {
     font-size: 12px;
+    letter-spacing: 1px;
   }
 
   .form-control {
     border: 1px solid rgba(29, 75, 64, 0.4);
     background-color: #FFFFFA;
     font-size: 12px;
+    letter-spacing: 1px;
     color: #1D4B40;
     border-radius: 0;
 
@@ -427,6 +430,8 @@ h3 {
   }
 
   .submit-btn {
+    min-width: 250px;
+    min-height: 50px;
     display: inline-block;
     font-weight: 300;
     color: #FFFFFA;
