@@ -26,7 +26,7 @@ h3 {
   min-height: 50%;
 
   @media only screen and (max-width: 800px) {
-    height: 100vh;
+    height: 130vh;
   }
 }
 
@@ -36,22 +36,26 @@ h3 {
   position: relative;
 
   @media only screen and (max-width: 800px) {
-    height: 100vh;
+    height: 130vh;
   }
 }
 
 .about-img {
-  display: block;
   width: 50%;
-  min-width: 250px;
-  margin-top: 15%;
+  min-width: 200px;
+  max-width: 350px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   &.left {
-    float: left;
+    left: 40%;
   }
 
   &.right {
-    float: right;
+    left: 60%;
   }
 }
 
@@ -82,7 +86,7 @@ h3 {
 
     @media only screen and (max-width: 800px) {
       left: 50%;
-      min-width: 350px;
+      min-width: 320px;
 
       h1 {
         font-size: 30px;
@@ -98,20 +102,56 @@ h3 {
   }
 }
 
+.sf-needs-us {
+  .col {
+    height: 100%;
+  }
+
+  .cta-text {
+    min-width: 320px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.help-you-help {
+  .col {
+    height: 100%;
+  }
+
+  .cta-text {
+    min-width: 320px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .col-6 {
     max-width: 100%;
   }
+
+  .about-img {
+    width: 100%;
+    min-width: none;
+    max-width: none;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
   .about-img.left {
-    float: none;
-    margin: auto;
-    padding-top: 60px;
+    left: 50%;
   }
 
   .about-img.right {
-    float: none;
-    margin: auto;
-    padding-top: 60px;
+    left: 50%;
   }
 
   .sf-needs-us {
@@ -121,12 +161,13 @@ h3 {
       justify-content: center;
       padding-bottom: 50px;
     }
-    .banner-text {
+    .cta-text {
       margin: 0;
-      text-align: left;
+      text-align: center;
       position: relative;
       transform: 0;
       max-width: 300px;
+      left:50%;
     }
   }
 
@@ -138,13 +179,13 @@ h3 {
       padding-bottom: 50px;
       flex-direction: column-reverse;
     }
-
-    .banner-text {
+    .cta-text {
       margin: 0;
-      text-align: left;
+      text-align: center;
       position: relative;
       transform: 0;
       max-width: 300px;
+      left:50%;
     }
   }
 }
@@ -157,7 +198,7 @@ h3 {
     min-height: 50%;
 
     @media only screen and (max-width: 800px) {
-      height: 100vh;
+      height: 130vh;
     }
   }
 
@@ -180,7 +221,7 @@ h3 {
 
     @media only screen and (max-width: 800px) {
       left: 50%;
-      min-width: 330px;
+      min-width: 320px;
 
       h1 {
         font-size: 45px;
@@ -273,7 +314,7 @@ h3 {
   }
 
   @media only screen and (max-width: 800px) {
-    min-width: 330px;
+    min-width: 320px;
 
     .title {
       font-size: 38px;
@@ -293,6 +334,7 @@ h3 {
   padding-left: 30px;
 
   h2 {
+    font-size: 28px;
     padding-bottom: 50px;
     letter-spacing: 1px;
     font-weight: 400;
