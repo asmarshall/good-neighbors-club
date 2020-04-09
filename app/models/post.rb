@@ -6,12 +6,12 @@ class Post < ApplicationRecord
     ['Brewery', 'brewery'],
     ['Coffee', 'coffee'],
     ['Tea', 'tea'],
-    ['Boutique', 'boutique'],
+    ['Retail Shop', 'boutique'],
     ['Farm', 'farm'],
     ['Flowers', 'flowers'],
     ['Fitness', 'fitness'],
-    ['Resources', 'resources'],
-    ['Mental Health', 'mental_health'],
+    ['Resources for Small Businesses', 'resources'],
+    ['Well-Being', 'mental_health'],
     ['General ways to help', 'general_ways_to_help'],
     ['Other', 'other']
   ]
@@ -21,8 +21,8 @@ class Post < ApplicationRecord
   scope :coffee_tea_shops, -> { where(category: %w[coffee tea]) }
   scope :boutiques, -> { where(category: 'boutique') }
   scope :farms_flowers, -> { where(category: %w[farm flower]) }
-  scope :fitness, -> { where(category: 'fitness') }
+  scope :fitness, -> { where(category: %w[fitness mental_health]) }
   scope :general_ways_to_help, -> { where(category: 'general_ways_to_help') }
-  scope :resources_mental_health, -> { where(category: %w[resources mental_health]) }
+  scope :resources_mental_health, -> { where(category: 'resources') }
   scope :is_public, -> { where(public: true) }
 end
