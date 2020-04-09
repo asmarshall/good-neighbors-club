@@ -109,7 +109,8 @@ h3 {
   }
 
   .cta-text {
-    min-width: 320px;
+    min-width: 300px;
+    max-width: 320px;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -192,10 +193,10 @@ h3 {
 }
 
 .category-banner {
-  height: 55vh;
+  height: 50vh;
 
   .col {
-    height: 55vh;
+    height: 50vh;
     min-height: 50%;
 
     @media only screen and (max-width: 800px) {
@@ -333,7 +334,7 @@ h3 {
 }
 
 .ways-to-help {
-  padding-top: 80px;
+  padding-top: 35px;
   padding-bottom: 80px;
   padding-right: 30px;
   padding-left: 30px;
