@@ -23,7 +23,7 @@
             <p class="body"><%= restaurant.body %></p>
             <a href="http://<%= restaurant.url %>" target="_blank"><span class="cta">Be a good neighbor</span> <%= image_tag("arrow_right_small.png", class: "url-arrow") %></a>
             <% if logged_in? %>
-            <div><a href="/post/<%= restaurant.id %>/edit"><span class="cta">edit</span></a></div>
+              <div><a href="/post/<%= restaurant.id %>/edit"><span class="cta">edit</span></a></div>
             <% end %>
           </div>
         <% end %>
