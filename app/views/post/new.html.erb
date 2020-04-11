@@ -1,0 +1,25 @@
+<section class="text-center form-page">
+
+  <%= form_with url: post_create_path do |f| %>
+    <label for="title">Title:</label><br>
+    <%= f.text_field(:title) %><br>
+
+    <label>Body:</label><br>
+    <%= f.text_area(:body, :size => '40x5') %><br>
+
+    <label>URL:</label><br>
+    <%= f.text_field(:url) %><br>
+
+    <label>Category:</label><br>
+    <%= f.select(:category,Post::CATEGORIES) %><br><br>
+
+    <label>Public:</label>
+    <%= f.check_box(:public) %><br><br>
+
+    <label for="media">Post Media:</label>
+    <%= f.file_field(:media, :class => "form-control media-upload col-3 m-auto") %><br>
+
+    <%= f.submit "Create Post" %>
+  <% end %>
+
+</section>

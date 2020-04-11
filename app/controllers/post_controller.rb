@@ -4,12 +4,22 @@ class PostController < ApplicationController
   end
 
   def create
+    @post = Post.create(post_params)
+
+    # if params[:media]
+    #   @image = Cloudinary::Uploader.upload(params[:media])
+    #   @post.media = @image['secure_url']
+    # end
+
+    # if @post.save
+      redirect_to '/welcome'
+    # end
   end
 
   def store
     # create a new post object and save to db
     @post = Post.new(post_params)
-    puts @post
+
     if params[:media]
       # upload image to cloudinary
       @image = Cloudinary::Uploader.upload(params[:media])

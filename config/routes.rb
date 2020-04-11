@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'welcome', to: 'sessions#welcome'
 
   get 'post/:id/edit', to: 'post#edit', as: :edit_post
+  get 'post/new', to: 'post#new', as: :new_post
   patch 'post/:id', to: 'post#update'
+  post 'post/create'
   post 'post/store'
 
   post 'contact/create'
