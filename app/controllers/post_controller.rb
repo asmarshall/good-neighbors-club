@@ -11,6 +11,8 @@ class PostController < ApplicationController
       @post.media = @image['secure_url']
     end
 
+    @post.public = params[:public]
+
     if @post.save
       redirect_to '/welcome'
     end

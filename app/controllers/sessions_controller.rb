@@ -19,6 +19,6 @@ class SessionsController < ApplicationController
   def welcome
     redirect_to '/' unless logged_in?
 
-    @private_posts = Post.where(public: false)
+    @private_posts = Post.where(public: false).order("created_at DESC")
   end
 end
