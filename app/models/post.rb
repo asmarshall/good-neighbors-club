@@ -8,12 +8,11 @@ class Post < ApplicationRecord
     ['Tea', 'tea'],
     ['Retail Shop', 'boutique'],
     ['Farm', 'farm'],
-    ['Flowers', 'flowers'],
+    ['Florists', 'flowers'],
     ['Fitness', 'fitness'],
     ['Resources for Small Businesses', 'resources'],
     ['Well-Being', 'mental_health'],
-    ['General ways to help', 'general_ways_to_help'],
-    ['Other', 'other']
+    ['Other ways to help', 'general_ways_to_help']
   ]
 
   scope :restaurants, -> { where(category: 'restaurant') }

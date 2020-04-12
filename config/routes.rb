@@ -14,10 +14,10 @@ Rails.application.routes.draw do
   get 'restaurants', to: 'pages#restaurants'
   get 'bars-and-breweries', to: 'pages#bars_breweries'
   get 'coffee-and-tea', to: 'pages#coffee_tea_shops'
-  get 'farms-and-flowers', to: 'pages#farms_flowers'
+  get 'farms-and-florists', to: 'pages#farms_flowers'
   get 'retail-shops', to: 'pages#boutiques'
   get 'fitness-and-well-being', to: 'pages#fitness'
-  get 'general-ways-to-help', to: 'pages#general_ways_to_help'
+  get 'other-ways-to-help', to: 'pages#general_ways_to_help'
   get 'resources-for-small-businesses', to: 'pages#resources_mental_health'
 
   get 'about', to: 'pages#about'

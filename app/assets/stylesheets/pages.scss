@@ -51,11 +51,11 @@ h3 {
   transform: translate(-50%, -50%);
 
   &.left {
-    left: 40%;
+    left: 35%;
   }
 
   &.right {
-    left: 60%;
+    left: 65%;
   }
 }
 
@@ -110,11 +110,11 @@ h3 {
 
   .cta-text {
     min-width: 300px;
-    max-width: 320px;
+    max-width: 350px;
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 35%;
     transform: translate(-50%, -50%);
   }
 }
@@ -126,10 +126,11 @@ h3 {
 
   .cta-text {
     min-width: 320px;
+    max-width: 350px;
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 65%;
     transform: translate(-50%, -50%);
   }
 }
