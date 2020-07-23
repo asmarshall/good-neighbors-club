@@ -4,6 +4,9 @@ Web app created to help support local businesses and foster community during COV
 
 See it live at [goodneighbors.club](http://www.goodneighbors.club/)!
 
+
+### screenshot walkthrough
+
 Home:
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/home.png)
 
