@@ -1,24 +1,5 @@
-# README
+# good neighbors club
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web app created to help support local businesses and foster community during COVID-19 ♥️
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[See it live](http://www.goodneighbors.club/)!
