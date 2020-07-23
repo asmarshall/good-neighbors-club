@@ -4,6 +4,8 @@ Web app created to help support local businesses and foster community during COV
 
 See it live at [goodneighbors.club](http://www.goodneighbors.club/)!
 
+Special thanks to [Kristin Yeh](https://www.kristinyeh.com/) for design support.
+
 
 
 ## Screenshot walkthrough
