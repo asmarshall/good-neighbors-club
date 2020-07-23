@@ -8,18 +8,18 @@ See it live at [goodneighbors.club](http://www.goodneighbors.club/)!
 
 ## Screenshot walkthrough
 
-Home
+### Home
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/home.png)
 
-About
+### About
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/about.png)
 
-Featured category examples
+### Featured category examples
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/resources.png)
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/bars.png)
 
-Submit a resource
+### Submit a resource
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/submit.png)
 
-Contact
+### Contact
 ![](https://github.com/asmarshall/good-neighbors-club/blob/master/screenshots/contact.png)
